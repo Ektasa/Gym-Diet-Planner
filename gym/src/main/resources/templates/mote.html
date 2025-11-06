@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title th:text="${title}">7 Days Diet Plan - Mote Log</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div class="container py-5">
+    <h2 th:text="${title}" class="mb-4">7 Days Diet Plan - Mote Log</h2>
+
+    <table class="table table-bordered">
+        <thead class="table-light">
+        <tr>
+            <th>Day</th>
+            <th>Diet Plan</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="entry : ${plan}">
+            <td th:text="${entry.key}">Day</td>
+            <td th:text="${entry.value}">Diet</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <a href="/" class="btn btn-secondary">Back to Home</a>
+</div>
+</body>
+</html>
