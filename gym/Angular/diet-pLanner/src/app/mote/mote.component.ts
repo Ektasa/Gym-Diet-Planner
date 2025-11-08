@@ -8,4 +8,7 @@ import { Component } from '@angular/core';
 })
 export class MoteComponent {
   days = [1, 2, 3, 4, 5, 6, 7];
+  breakfastInput: any;
+  lunchInput: any;
+  dinnerInput: any;
 }

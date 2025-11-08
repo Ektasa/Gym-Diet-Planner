@@ -1,2 +1,24 @@
 /* home.component.css */
 @import 'bootstrap/dist/css/bootstrap.min.css';
+
+.home-slider .slider{ overflow:hidden; }
+.home-slider .slides{ width:100%; }
+.home-slider .slides.transition{ transition:transform 0.6s ease; }
+.home-slider .slide{ min-width:100%; position:relative; }
+.home-slider .slide img{ display:block; height:360px; object-fit:cover; }
+.home-slider .slide-caption{ position:absolute; left:24px; bottom:24px; background:rgba(0,0,0,0.45); max-width:60%; border-radius:6px; }
+
+.indicators .btn{ width:12px; height:12px; padding:0; border-radius:50%; }
+
+@media (max-width:576px){
+	.home-slider .slide img{ height:220px; }
+	.home-slider .slide-caption{ max-width:90%; left:12px; right:12px; }
+}
+
+/* Style for the home-local navbar */
+.navbar-brand{ font-weight:700; }
+.navbar-dark .navbar-brand, .navbar-dark .nav-link{ color: #fff; }
+.navbar-dark .nav-link:hover{ color: #e6f2ff; }
+
+/* Make sure the slider aligns under the navbar when using container-fluid */
+.container.p-0 + .home-slider{ padding-top:0.5rem; }
