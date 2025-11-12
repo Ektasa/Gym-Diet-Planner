@@ -12,7 +12,7 @@ public class HomeController {
 
 	@GetMapping("/")
 	public String index() {
-		return "i.htmlll";
+		return "index.html";
 	}
 
 	@GetMapping("/mote")
