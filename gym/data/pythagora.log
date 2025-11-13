@@ -196,3 +196,9 @@ Extra context: {
 2025-11-12T20:22:50.913Z INFO Database initialized successfully
 2025-11-12T20:22:50.914Z INFO [Migration] Checking for database migration...
 2025-11-12T20:22:51.124Z INFO [Migration] No migration needed
+2025-11-12T20:51:01.506Z INFO [MainProvider] First file opened, creating split view
+2025-11-12T20:51:01.507Z INFO splitCodeView: Creating split layout with code on left, Pythagora on right
+2025-11-12T20:51:02.151Z INFO splitCodeView: Split layout created successfully
+2025-11-13T17:40:54.945Z INFO [MainProvider] First file opened, creating split view
+2025-11-13T17:40:54.946Z INFO splitCodeView: Creating split layout with code on left, Pythagora on right
+2025-11-13T17:40:55.893Z INFO splitCodeView: Split layout created successfully
