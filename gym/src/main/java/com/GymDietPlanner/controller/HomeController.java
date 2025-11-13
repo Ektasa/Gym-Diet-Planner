@@ -1,8 +1,11 @@
 package com.GymDietPlanner.controller;
 
+import com.GymDietPlanner.Entity.Login;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -10,10 +13,18 @@ import java.util.Map;
 @Controller
 public class HomeController {
 
+
+
+
 	@GetMapping("/")
 	public String index() {
 		return "index.html";
 	}
+    @GetMapping("/index")
+    public String Loginpage(@RequestBody Login login) {
+        return "index.html";
+    }
+
 
 	@GetMapping("/mote")
 	public String mote(Model model) {
