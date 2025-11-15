@@ -4,10 +4,12 @@ import { MotelogComponent } from './motelog/motelog.component';
 
 import { PatlelogComponent } from './patlelog/patlelog.component';
 import { LoginComponent } from './login/login.component';
+import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [{ path: "mote", component: MotelogComponent }
   ,{path: "patle", component: PatlelogComponent }
-,{path: "login", component: LoginComponent }  
+,{path: "login", component: LoginComponent },
+{path: "home", component: HomeComponent }  
 ];
 
 @NgModule({

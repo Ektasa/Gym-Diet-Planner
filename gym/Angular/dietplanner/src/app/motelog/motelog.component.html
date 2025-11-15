@@ -1,4 +1,14 @@
 <p>motelog works!</p>
 
-<h1>Motelog Component</h1>
-
+<!-- <h1>Motelog Component</h1> -->
+<table border="1" >
+  <tr>
+    <th>Username</th>
+    <th>Password</th>
+  </tr>
+  <tr *ngFor="let users of user">
+    <td>{{users.username}}</td>
+    <td>{{users.password}}</td>
+    <th><button (click)="DeleteUser(users.id)">Delete User</button></th>
+  </tr>
+</table>

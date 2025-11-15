@@ -16,12 +16,13 @@ public class HomeController {
 
 
 
-	@GetMapping("/")
+	@GetMapping("/dashboard")
 	public String index() {
 		return "index.html";
 	}
-    @GetMapping("/index")
+    @GetMapping("/home")
     public String Loginpage(@RequestBody Login login) {
+        
         return "index.html";
     }
 

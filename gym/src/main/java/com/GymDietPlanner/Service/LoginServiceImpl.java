@@ -6,6 +6,8 @@ import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class LoginServiceImpl implements loginDetailsService {
 
@@ -18,5 +20,23 @@ public class LoginServiceImpl implements loginDetailsService {
         return loginRepository.save(login);
     }
 
+    @Override
+    public boolean checkLogin(Login login) {
+        return loginRepository.findAll().stream()
+                .anyMatch(existingLogin ->
+                        existingLogin.getUsername().equals(login.getUsername()) &&
+                        existingLogin.getPassword().equals(login.getPassword()));
+    }
+
+    @Override
+    public List<Login> getAllLogins() {
+        return loginRepository.findAll();
+    }
+
+    @Override
+    public String deleteLogin(Long id) {
+        loginRepository.deleteById(id);
+        return "Deleted login with id: " + id;
+    }
 
 }
