@@ -1,19 +1,22 @@
 package com.GymDietPlanner.controller;
 
 import com.GymDietPlanner.Entity.Login;
+import com.GymDietPlanner.Repository.WeeklyMealPlanRepository;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-@Controller
+@RestController
 public class HomeController {
 
 
+WeeklyMealPlanRepository weeklyMealPlanRepository;
 
 
 	@GetMapping("/dashboard")
@@ -22,15 +25,15 @@ public class HomeController {
 	}
     @GetMapping("/home")
     public String Loginpage(@RequestBody Login login) {
-        
+
         return "index.html";
     }
 
 
-	@GetMapping("/mote")
+	@GetMapping("/mote ")
 	public String mote(Model model) {
 		model.addAttribute("title", "7 Days Diet Plan - Mote Log");
-		model.addAttribute("plan", getMotePlan());
+		model.addAttribute("plan", weeklyMealPlanRepository.findByDay("Monday"));
 		return "mote";
 	}
 

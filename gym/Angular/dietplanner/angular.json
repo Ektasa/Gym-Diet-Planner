@@ -34,9 +34,12 @@
               "src/favicon.ico",
               "src/assets"
             ],
-            "styles": [
-              "src/styles.css"
-            ],
+           "styles": [
+            "@angular/material/prebuilt-themes/pink-bluegrey.css",
+            "node_modules/bootstrap/dist/css/bootstrap.min.css",
+            "node_modules/bootstrap-icons/font/bootstrap-icons.css",
+            "src/styles.scss"
+          ],
             "scripts": [],
             "server": "src/main.server.ts",
             "prerender": true,
@@ -99,6 +102,7 @@
               "src/assets"
             ],
             "styles": [
+              "@angular/material/prebuilt-themes/pink-bluegrey.css",
               "src/styles.css"
             ],
             "scripts": []

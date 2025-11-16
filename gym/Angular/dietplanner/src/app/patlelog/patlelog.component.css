@@ -1,0 +1,6 @@
+.title { text-align: center; font-size: 28px; }
+.diet-box {
+width: 60%; margin: 30px auto;
+background: #fff; padding: 20px; border-radius: 10px;
+box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}

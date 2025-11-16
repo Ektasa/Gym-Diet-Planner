@@ -336,3 +336,13 @@ Extra context: {
 2025-11-15T20:43:42.083Z INFO [MainProvider] First file opened, creating split view
 2025-11-15T20:43:42.084Z INFO splitCodeView: Creating split layout with code on left, Pythagora on right
 2025-11-15T20:43:42.150Z INFO splitCodeView: Split layout created successfully
+2025-11-16T10:54:03.704Z INFO Successfully restored from code view
+2025-11-16T10:54:06.391Z INFO [MainProvider] First file opened, creating split view
+2025-11-16T10:54:06.393Z INFO splitCodeView: Creating split layout with code on left, Pythagora on right
+2025-11-16T10:54:06.819Z INFO splitCodeView: Split layout created successfully
+2025-11-16T10:55:53.614Z INFO [MainProvider] First file opened, creating split view
+2025-11-16T10:55:53.618Z INFO splitCodeView: Creating split layout with code on left, Pythagora on right
+2025-11-16T10:55:53.999Z INFO splitCodeView: Split layout created successfully
+2025-11-16T20:43:33.896Z INFO [MainProvider] First file opened, creating split view
+2025-11-16T20:43:33.897Z INFO splitCodeView: Creating split layout with code on left, Pythagora on right
+2025-11-16T20:43:34.010Z INFO splitCodeView: Split layout created successfully
