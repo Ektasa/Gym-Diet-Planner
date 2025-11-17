@@ -1,0 +1,18 @@
+:host { display:block; padding-bottom: 40px; }
+
+.mat-card {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.03);
+}
+mat-card h3 { margin: 8px 0; color: #fff; }
+mat-card p { color: #b9c6d4; font-size: 14px; }
+.mat-card mat-card-actions { display:flex; gap:10px; justify-content:flex-end; }
+:host { display:block; padding-bottom: 40px; }
+
+.mat-card {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.03);
+}
+mat-card h3 { margin: 8px 0; color: #fff; }
+mat-card p { color: #b9c6d4; font-size: 14px; }
+.mat-card mat-card-actions { display:flex; gap:10px; justify-content:flex-end; }

@@ -36,3 +36,12 @@ object-fit: cover;
 @keyframes slide {
 0% { transform: translateX(0); }
 }
+.card-container {
+text-align: center;
+/* row  view  */
+margin: 40px auto;
+display: flex;  
+font-size: 32px;
+margin: 40px 0 20px 0;
+
+}

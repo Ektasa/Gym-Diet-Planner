@@ -1,67 +1,41 @@
-
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>7 Days Diet Plan</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css">
-</head>
-<body>
-<div class="container vh-100 d-flex justify-content-center align-items-center">
-    <div class="text-center">
-        <h1 class="mb-4">7 Days Diet Planner</h1>
-        <div class="d-grid gap-3 col-6 mx-auto">
-            <a th:href="@{/mote}" class="btn btn-primary btn-lg">Mote Log</a>
-            <a th:href="@{/patle}" class="btn btn-success btn-lg">Patle Log</a>
-        </div>
+<mat-toolbar class="app-toolbar" color="primary">
+  <div class="d-flex align-items-center w-100">
+    <div class="d-flex align-items-center">
+      <span class="brand me-3">FitnessPro</span>
+      <mat-icon>fitness_center</mat-icon>
     </div>
-</div>
-</body>
-</html>
+    <span class="flex-grow-1"></span>
+    <nav>
+      <a mat-button routerLink="/signup">Register</a>
+      <a mat-stroked-button color="accent" routerLink="/login">Sign In</a>
+    </nav>
+  </div>
+</mat-toolbar>
 
-<nav class="navbar">
-<h1 class="logo">FitnessPro</h1>
-<div>
-<a routerLink="/signup">Register</a>
-<a routerLink="/login">Sign In</a>
-</div>
-</nav>
+<!-- Slider -->
+<app-slider [images]="[ 'assets/gym1.jpg','assets/gym2.jpg','assets/gym3.jpg','assets/gym4.jpg' ]"></app-slider>
 
-
-<!-- IMAGE SLIDER -->
-<div class="slider">
-<img src="assets/gym1.jpg" />
-<img src="assets/gym2.jpg" />
-<img src="assets/gym3.jpg" />
-</div>
-
-
-<!-- EXERCISE CARDS -->
 <h2 class="section-title">Body Workout Sections</h2>
-<div class="card-container">
-<div class="card">
-<img src="assets/chest.jpg" />
-<h3>Chest Workout</h3>
-</div>
-<div class="card">
-<img src="assets/back.jpg" />
-<h3>Back Workout</h3>
-</div>
-<div class="card">
-<img src="assets/legs.jpg" />
-<h3>Leg Workout</h3>
-</div>
-<div class="card">
-<img src="assets/shoulder.jpg" />
-<h3>Shoulder Workout</h3>
-</div>
+
+<!-- Cards grid with Angular animations -->
+<div class="cards-grid" [@listStagger]>
+  <mat-card class="exercise-card" *ngFor="let ex of exercises">
+    <img mat-card-image [src]="ex.img" alt="{{ex.title}}">
+    <mat-card-content>
+      <h3>{{ ex.title }}</h3>
+      <p>{{ ex.desc }}</p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button>View</button>
+      <button mat-button>Start</button>
+    </mat-card-actions>
+  </mat-card>
 </div>
 
-
-<!-- DIET LINKS -->
 <div class="diet-links">
-<a routerLink="/diet-fat">Diet for Fat People</a>
-<a routerLink="/diet-thin">Diet for Thin People</a>
+  <a routerLink="/diet-fat">Diet for Fat People</a>
+  <a routerLink="/diet-thin">Diet for Thin People</a>
 </div>
+<footer class="app-footer">
+  <p>&copy; 2024 FitnessPro. All rights reserved.</p>
+</footer>

@@ -346,3 +346,23 @@ Extra context: {
 2025-11-16T20:43:33.896Z INFO [MainProvider] First file opened, creating split view
 2025-11-16T20:43:33.897Z INFO splitCodeView: Creating split layout with code on left, Pythagora on right
 2025-11-16T20:43:34.010Z INFO splitCodeView: Split layout created successfully
+2025-11-17T12:48:29.757Z INFO Successfully restored from code view
+2025-11-17T12:48:31.799Z INFO [MainProvider] First file opened, creating split view
+2025-11-17T12:48:31.800Z INFO splitCodeView: Creating split layout with code on left, Pythagora on right
+2025-11-17T12:48:32.107Z INFO splitCodeView: Split layout created successfully
+2025-11-17T19:01:05.886Z INFO [MainProvider] First file opened, creating split view
+2025-11-17T19:01:05.889Z INFO splitCodeView: Creating split layout with code on left, Pythagora on right
+2025-11-17T19:01:06.364Z INFO splitCodeView: Split layout created successfully
+2025-11-17T19:01:15.714Z INFO [MainProvider] First file opened, creating split view
+2025-11-17T19:01:15.716Z INFO splitCodeView: Creating split layout with code on left, Pythagora on right
+2025-11-17T19:01:15.894Z INFO splitCodeView: Split layout created successfully
+2025-11-17T19:07:34.380Z INFO Successfully restored from code view
+2025-11-17T19:07:36.853Z INFO [MainProvider] First file opened, creating split view
+2025-11-17T19:07:36.853Z INFO splitCodeView: Creating split layout with code on left, Pythagora on right
+2025-11-17T19:07:37.095Z INFO splitCodeView: Split layout created successfully
+2025-11-17T19:08:00.878Z INFO [MainProvider] First file opened, creating split view
+2025-11-17T19:08:00.879Z INFO splitCodeView: Creating split layout with code on left, Pythagora on right
+2025-11-17T19:08:01.160Z INFO splitCodeView: Split layout created successfully
+2025-11-17T19:08:51.645Z INFO [MainProvider] First file opened, creating split view
+2025-11-17T19:08:51.646Z INFO splitCodeView: Creating split layout with code on left, Pythagora on right
+2025-11-17T19:08:51.722Z INFO splitCodeView: Split layout created successfully

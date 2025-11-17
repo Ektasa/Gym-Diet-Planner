@@ -1,0 +1,13 @@
+.carousel-wrap { position: relative; }
+.carousel-item { transition: opacity .8s ease-in-out; }
+.carousel-item:not(.active) { display: block; opacity: 0; pointer-events: none; position: absolute; top:0; left:0; width:100%; }
+.carousel-item.active { opacity: 1; position: relative; pointer-events: auto; display:block; }
+.carousel-control-prev, .carousel-control-next {
+  width: 56px; height: 56px; background: rgba(0,0,0,0.35); border-radius: 50%;
+  display:flex; align-items:center; justify-content:center; border:none;
+}
+.carousel-indicators button {
+  width: 10px; height: 10px; border-radius: 50%; margin: 0 6px; border: none;
+  background: rgba(255,255,255,0.22);
+}
+.carousel-indicators button.active { background: #ff4d4d; transform: scale(1.15); }
