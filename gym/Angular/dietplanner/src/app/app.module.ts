@@ -22,15 +22,15 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 // import { SliderComponent } from './slider/slider.component';
 
 @NgModule({
-  // declarations: [
-  //   AppComponent,
-  //   LoginComponent,
-  //   SignupComponent,
-  //   HomeComponent,
-  //   MotelogComponent,
-  //   PatlelogComponent,
-  //   SliderComponent
-  // ],
+  declarations: [
+    AppComponent,
+    LoginComponent,
+    SignupComponent,
+    HomeComponent,
+    MotelogComponent,
+    PatlelogComponent,
+    SliderComponent
+  ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
@@ -45,10 +45,6 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
   ],
   providers: [
     provideAnimationsAsync()
-  ],
-  bootstrap: [AppComponent],
-  declarations: [
-    SliderComponent
   ]
 })
 export class AppModule { }
