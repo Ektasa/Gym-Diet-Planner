@@ -1,18 +1,298 @@
-:host { display:block; padding-bottom: 40px; }
-
-.mat-card {
-  background: transparent;
-  border: 1px solid rgba(255,255,255,0.03);
+:host { 
+  display: block; 
+  padding-bottom: 0;
+  position: relative;
+  z-index: 1;
 }
-mat-card h3 { margin: 8px 0; color: #fff; }
-mat-card p { color: #b9c6d4; font-size: 14px; }
-.mat-card mat-card-actions { display:flex; gap:10px; justify-content:flex-end; }
-:host { display:block; padding-bottom: 40px; }
 
-.mat-card {
-  background: transparent;
-  border: 1px solid rgba(255,255,255,0.03);
+/* Hero Section */
+.hero-section {
+  position: relative;
+  margin-bottom: 60px;
 }
-mat-card h3 { margin: 8px 0; color: #fff; }
-mat-card p { color: #b9c6d4; font-size: 14px; }
-.mat-card mat-card-actions { display:flex; gap:10px; justify-content:flex-end; }
+
+.hero-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 10;
+  pointer-events: none;
+  width: 90%;
+  max-width: 800px;
+}
+
+.hero-title {
+  font-size: 56px;
+  font-weight: 900;
+  margin: 0 0 20px 0;
+  background: linear-gradient(135deg, #ffffff 0%, #ff6b7a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 0 30px rgba(255, 107, 122, 0.5);
+  letter-spacing: 2px;
+  animation: fadeInUp 1s ease;
+}
+
+.hero-subtitle {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0;
+  font-weight: 300;
+  letter-spacing: 1px;
+  animation: fadeInUp 1s ease 0.2s both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Card Enhancements */
+.card-image-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-overlay {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, #ff4757 0%, #ff6b7a 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 18px;
+  color: white;
+  box-shadow: 0 4px 15px rgba(255, 71, 87, 0.4);
+  opacity: 0;
+  transform: scale(0);
+  transition: all 0.3s ease;
+}
+
+.exercise-card:hover .card-overlay {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.card-number {
+  font-size: 18px;
+}
+
+.card-btn {
+  border-radius: 8px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.5px !important;
+  transition: all 0.3s ease !important;
+}
+
+.card-btn.primary {
+  background: linear-gradient(135deg, #ff4757 0%, #ff6b7a 100%) !important;
+  color: white !important;
+  border: none !important;
+}
+
+.card-btn.primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(255, 71, 87, 0.4) !important;
+}
+
+/* Diet Section */
+.diet-section {
+  margin: 80px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.diet-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 40px auto;
+}
+
+.diet-card {
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 71, 87, 0.3);
+  border-radius: 20px;
+  padding: 40px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.diet-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(255, 71, 87, 0.1), rgba(255, 107, 122, 0.05));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.diet-card:hover::before {
+  opacity: 1;
+}
+
+.diet-card mat-icon {
+  font-size: 64px;
+  width: 64px;
+  height: 64px;
+  color: #ff4757;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.diet-card:hover mat-icon {
+  transform: scale(1.2) rotate(5deg);
+  color: #ff6b7a;
+}
+
+.diet-card h3 {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+  background: linear-gradient(135deg, #ffffff 0%, #ff6b7a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.diet-card p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 16px;
+  margin: 0;
+}
+
+.diet-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  border-color: #ff4757;
+  box-shadow: 
+    0 20px 40px rgba(0, 0, 0, 0.4),
+    0 0 0 1px rgba(255, 71, 87, 0.3),
+    0 0 40px rgba(255, 71, 87, 0.2);
+}
+
+/* Stats Section */
+.stats-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 60px 20px;
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.01));
+  backdrop-filter: blur(10px);
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+  z-index: 1;
+}
+
+.stat-item {
+  text-align: center;
+  padding: 20px;
+}
+
+.stat-number {
+  font-size: 48px;
+  font-weight: 900;
+  background: linear-gradient(135deg, #ff4757 0%, #ff6b7a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 10px;
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+/* Footer Enhancements */
+.footer-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto 30px;
+  text-align: left;
+}
+
+.footer-brand p {
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 10px;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-links a {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.footer-links a:hover {
+  color: #ff4757;
+  transform: translateX(5px);
+}
+
+.footer-copyright {
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 36px;
+  }
+  
+  .hero-subtitle {
+    font-size: 16px;
+  }
+  
+  .diet-links {
+    grid-template-columns: 1fr;
+  }
+  
+  .stats-section {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 40px 20px;
+  }
+  
+  .footer-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}

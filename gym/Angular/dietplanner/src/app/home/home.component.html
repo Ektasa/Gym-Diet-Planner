@@ -6,36 +6,89 @@
     </div>
     <span class="flex-grow-1"></span>
     <nav>
-      <a mat-button routerLink="/signup">Register</a>
-      <a mat-stroked-button color="accent" routerLink="/login">Sign In</a>
+      <a mat-button routerLink="/signup" class="nav-link">Register</a>
+      <a mat-stroked-button color="accent" routerLink="/login" class="nav-link">Sign In</a>
     </nav>
   </div>
 </mat-toolbar>
 
-<!-- Slider -->
-<app-slider [images]="[ 'assets/gym1.jpg','assets/gym2.jpg','assets/gym3.jpg','assets/gym4.jpg' ]"></app-slider>
+<!-- Hero Slider Section -->
+<div class="hero-section">
+  <app-slider [images]="[ 'assets/gym1.jpg','assets/gym2.jpg','assets/gym3.jpg','assets/gym4.jpg' ]"></app-slider>
+  <div class="hero-overlay">
+    <h1 class="hero-title">Transform Your Body</h1>
+    <p class="hero-subtitle">Achieve your fitness goals with personalized workout plans</p>
+  </div>
+</div>
 
+<!-- Body Workout Sections -->
 <h2 class="section-title">Body Workout Sections</h2>
 
 <!-- Cards grid with Angular animations -->
 <div class="cards-grid" [@listStagger]>
-  <mat-card class="exercise-card" *ngFor="let ex of exercises">
-    <img mat-card-image [src]="ex.img" alt="{{ex.title}}">
+  <mat-card class="exercise-card" *ngFor="let ex of exercises; let i = index">
+    <div class="card-image-wrapper">
+      <img mat-card-image [src]="ex.img" alt="{{ex.title}}">
+      <div class="card-overlay">
+        <span class="card-number">{{ i + 1 }}</span>
+      </div>
+    </div>
     <mat-card-content>
       <h3>{{ ex.title }}</h3>
       <p>{{ ex.desc }}</p>
     </mat-card-content>
     <mat-card-actions>
-      <button mat-button>View</button>
-      <button mat-button>Start</button>
+      <button mat-button class="card-btn">View Details</button>
+      <button mat-button class="card-btn primary">Start Workout</button>
     </mat-card-actions>
   </mat-card>
 </div>
 
-<div class="diet-links">
-  <a routerLink="/diet-fat">Diet for Fat People</a>
-  <a routerLink="/diet-thin">Diet for Thin People</a>
+<!-- Diet Plans Section -->
+<div class="diet-section">
+  <h2 class="section-title">Personalized Diet Plans</h2>
+  <div class="diet-links">
+    <a routerLink="/diet-fat" class="diet-card">
+      <mat-icon>restaurant</mat-icon>
+      <h3>Weight Loss Plan</h3>
+      <p>Diet for Fat People</p>
+    </a>
+    <a routerLink="/diet-thin" class="diet-card">
+      <mat-icon>fitness_center</mat-icon>
+      <h3>Muscle Gain Plan</h3>
+      <p>Diet for Thin People</p>
+    </a>
+  </div>
 </div>
+
+<!-- Stats Section -->
+<div class="stats-section">
+  <div class="stat-item">
+    <div class="stat-number">1000+</div>
+    <div class="stat-label">Active Members</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-number">50+</div>
+    <div class="stat-label">Expert Trainers</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-number">24/7</div>
+    <div class="stat-label">Support Available</div>
+  </div>
+</div>
+
 <footer class="app-footer">
-  <p>&copy; 2024 FitnessPro. All rights reserved.</p>
+  <div class="footer-content">
+    <div class="footer-brand">
+      <span class="brand">FitnessPro</span>
+      <p>Your journey to a healthier lifestyle starts here</p>
+    </div>
+    <div class="footer-links">
+      <a href="#">About Us</a>
+      <a href="#">Contact</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+    </div>
+  </div>
+  <p class="footer-copyright">&copy; 2024 FitnessPro. All rights reserved.</p>
 </footer>

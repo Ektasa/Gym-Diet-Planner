@@ -10,6 +10,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatDividerModule } from '@angular/material/divider';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
@@ -18,6 +20,7 @@ import { HomeComponent } from './home/home.component';
 import { MotelogComponent } from './motelog/motelog.component';
 import { PatlelogComponent } from './patlelog/patlelog.component';
 import { SliderComponent } from './slider/slider.component';
+import { AppRoutingModule } from './app-routing.module';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 // import { SliderComponent } from './slider/slider.component';
 
@@ -41,7 +44,10 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
     MatIconModule,
     MatCardModule,
     MatMenuModule,
-    MatDividerModule
+    MatDividerModule,
+    MatFormFieldModule,
+    MatInputModule,
+    AppRoutingModule
   ],
   providers: [
     provideAnimationsAsync()

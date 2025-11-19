@@ -1,10 +1,42 @@
 <div class="signup-container">
-<h2>Create Account</h2>
-<!-- <input placeholder="Username" [(ngModel)]="username" /> -->
-<!-- <input placeholder="Email" [(ngModel)]="email" /> -->
-<!-- <input type="password" placeholder="Password" [(ngModel)]="password" /> -->
- <input placeholder="Username" />
- <input placeholder="Email" />          
-    <input type="password" placeholder="Password" />
-<button>Create Account</button>
+  <div class="signup-background">
+    <div class="bg-shape shape-1"></div>
+    <div class="bg-shape shape-2"></div>
+    <div class="bg-shape shape-3"></div>
+  </div>
+  <div class="signup-content">
+    <mat-card class="signup-card">
+      <div class="signup-header">
+        <mat-icon class="signup-icon">person_add</mat-icon>
+        <h2>Join FitnessPro</h2>
+        <p>Start your fitness journey today</p>
+      </div>
+      <form class="signup-form">
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label>Username</mat-label>
+          <input matInput placeholder="Enter your username" />
+          <mat-icon matPrefix>person</mat-icon>
+        </mat-form-field>
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label>Email</mat-label>
+          <input matInput type="email" placeholder="Enter your email" />
+          <mat-icon matPrefix>email</mat-icon>
+        </mat-form-field>
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label>Password</mat-label>
+          <input matInput type="password" placeholder="Create a password" />
+          <mat-icon matPrefix>lock</mat-icon>
+        </mat-form-field>
+        <div class="signup-actions">
+          <button mat-raised-button class="signup-button">
+            <span>Create Account</span>
+            <mat-icon>arrow_forward</mat-icon>
+          </button>
+          <div class="signup-footer">
+            <p>Already have an account? <a routerLink="/login">Sign In</a></p>
+          </div>
+        </div>
+      </form>
+    </mat-card>
+  </div>
 </div>

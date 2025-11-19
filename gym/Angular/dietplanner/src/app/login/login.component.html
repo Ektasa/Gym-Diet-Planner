@@ -1,16 +1,37 @@
-<div class="d-flex justify-content-center align-items-center" style="min-height:70vh">
-  <mat-card style="width: 380px; padding: 20px;">
-    <h2>Sign In</h2>
-    <mat-form-field appearance="fill" style="width:100%; margin-top:12px;">
-      <mat-label>Username</mat-label>
-      <input matInput [(ngModel)]="username" />
-    </mat-form-field>
-    <mat-form-field appearance="fill" style="width:100%; margin-top:8px;">
-      <mat-label>Password</mat-label>
-      <input matInput type="password" [(ngModel)]="password" />
-    </mat-form-field>
-    <div class="d-grid mt-3">
-      <button mat-raised-button color="primary" (click)="login()">Login</button>
-    </div>
-  </mat-card>
+<div class="login-container">
+  <div class="login-background">
+    <div class="bg-shape shape-1"></div>
+    <div class="bg-shape shape-2"></div>
+    <div class="bg-shape shape-3"></div>
+  </div>
+  <div class="login-content">
+    <mat-card class="login-card">
+      <div class="login-header">
+        <mat-icon class="login-icon">fitness_center</mat-icon>
+        <h2>Welcome Back</h2>
+        <p>Sign in to continue your fitness journey</p>
+      </div>
+      <form class="login-form">
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label>Username</mat-label>
+          <input matInput [(ngModel)]="username" name="username" />
+          <mat-icon matPrefix>person</mat-icon>
+        </mat-form-field>
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label>Password</mat-label>
+          <input matInput type="password" [(ngModel)]="password" name="password" />
+          <mat-icon matPrefix>lock</mat-icon>
+        </mat-form-field>
+        <div class="login-actions">
+          <button mat-raised-button class="login-button" (click)="login()">
+            <span>Sign In</span>
+            <mat-icon>arrow_forward</mat-icon>
+          </button>
+          <div class="login-footer">
+            <p>Don't have an account? <a routerLink="/signup">Sign Up</a></p>
+          </div>
+        </div>
+      </form>
+    </mat-card>
+  </div>
 </div>
