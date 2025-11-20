@@ -1,30 +1,36 @@
 package com.GymDietPlanner.controller;
 
 import com.GymDietPlanner.Entity.Login;
-import com.GymDietPlanner.Service.LoginService;
 import com.GymDietPlanner.Service.loginDetailsService;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/login")
+@CrossOrigin(origins = "http://localhost:4200")
 public class LoginController {
     private final loginDetailsService loginDetailsService;
 
-    public LoginController(loginDetailsService loginDetailsService, loginDetailsService loginDetailsService1) {
-
-
-        this.loginDetailsService = loginDetailsService1;
+    public LoginController(loginDetailsService loginDetailsService) {
+        this.loginDetailsService = loginDetailsService;
     }
 
     @PostMapping("/submit")
-    public String addLogin(@RequestBody Login login) {
-//        if(loginDetailsService.checkLogin(login)) {
-//            return "Login Successful";
-//        }
-        Login log=loginDetailsService.save(login);
-        return log.getUsername() + " " + log.getPassword();
+    public ResponseEntity<?> addLogin(@RequestBody Login login) {
+        try {
+            // Check if user exists
+            if(loginDetailsService.checkLogin(login)) {
+                return ResponseEntity.ok().body(Map.of("status", "success", "message", "Login Successful", "username", login.getUsername()));
+            }
+            // Save new login
+            Login savedLogin = loginDetailsService.save(login);
+            return ResponseEntity.ok().body(Map.of("status", "success", "message", "User registered successfully", "username", savedLogin.getUsername()));
+        } catch (Exception e) {
+            return ResponseEntity.status(500).body(Map.of("status", "error", "message", e.getMessage()));
+        }
     }
 
     @GetMapping("/getuser")

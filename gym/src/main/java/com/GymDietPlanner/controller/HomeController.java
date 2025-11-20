@@ -2,38 +2,40 @@ package com.GymDietPlanner.controller;
 
 import com.GymDietPlanner.Entity.Login;
 import com.GymDietPlanner.Repository.WeeklyMealPlanRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-@RestController
+@Controller
+@RequestMapping("/")
 public class HomeController {
 
-
-WeeklyMealPlanRepository weeklyMealPlanRepository;
-
-
-	@GetMapping("/dashboard")
-	public String index() {
-		return "index.html";
-	}
-    @GetMapping("/home")
-    public String Loginpage(@RequestBody Login login) {
-
-        return "index.html";
-    }
+    @Autowired
+    private WeeklyMealPlanRepository weeklyMealPlanRepository;
 
 
-	@GetMapping("/mote ")
+//	@GetMapping("/dashboard")
+//	public String index() {
+//		return "index.html";
+//	}
+//    @GetMapping("/hom")
+//    public String Loginpage(@RequestBody Login login) {
+//
+//        return "index.html";
+//    }
+
+	@GetMapping("/mote")
 	public String mote(Model model) {
 		model.addAttribute("title", "7 Days Diet Plan - Mote Log");
-		model.addAttribute("plan", weeklyMealPlanRepository.findByDay("Monday"));
+		if (weeklyMealPlanRepository != null) {
+			model.addAttribute("plan", weeklyMealPlanRepository.findByDay("Monday"));
+		} else {
+			model.addAttribute("plan", getMotePlan());
+		}
 		return "mote";
 	}
 

@@ -8,11 +8,11 @@ import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
   { path: "", component: HomeComponent },
+  { path: "home", component: HomeComponent },
   { path: "mote", component: MotelogComponent },
   { path: "patle", component: PatlelogComponent },
   { path: "login", component: LoginComponent },
-  { path: "signup", component: SignupComponent },
-  { path: "home", component: HomeComponent }
+  { path: "signup", component: SignupComponent }
 ];
 
 @NgModule({

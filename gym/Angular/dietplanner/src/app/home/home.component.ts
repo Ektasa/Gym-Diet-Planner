@@ -17,12 +17,19 @@ import { trigger, style, transition, animate, query, stagger } from '@angular/an
   ]
 })
 export class HomeComponent {
+  sliderImages = [
+    'assets/chest.jpeg',
+    'assets/back.jpeg',
+    'assets/legs.jpeg',
+    'assets/shoulder.jpeg'
+  ];
+
   exercises = [
-    { title: 'Chest', img: 'assets/chest.jpg', desc: 'Bench press, push-ups, flyes' },
-    { title: 'Back', img: 'assets/back.jpg', desc: 'Pull-ups, rows, deadlifts' },
-    { title: 'Legs', img: 'assets/legs.jpg', desc: 'Squats, lunges, leg-press' },
-    { title: 'Shoulders', img: 'assets/shoulder.jpg', desc: 'Overhead press, lateral raises' },
-    { title: 'Arms', img: 'assets/arms.jpg', desc: 'Biceps curls, triceps dips' },
-    { title: 'Core', img: 'assets/core.jpg', desc: 'Planks, leg raises, twists' }
+    { title: 'Chest', img: 'assets/chest.jpeg', desc: 'Bench press, push-ups, flyes' },
+    { title: 'Back', img: 'assets/back.jpeg', desc: 'Pull-ups, rows, deadlifts' },
+    { title: 'Legs', img: 'assets/legs.jpeg', desc: 'Squats, lunges, leg-press' },
+    { title: 'Shoulders', img: 'assets/shoulder.jpeg', desc: 'Overhead press, lateral raises' },
+    { title: 'Arms', img: 'assets/Arms.jpeg', desc: 'Biceps curls, triceps dips' },
+    { title: 'Core', img: 'assets/core.jpeg', desc: 'Planks, leg raises, twists' }
   ];
 }

@@ -22,7 +22,6 @@ import { PatlelogComponent } from './patlelog/patlelog.component';
 import { SliderComponent } from './slider/slider.component';
 import { AppRoutingModule } from './app-routing.module';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
-// import { SliderComponent } from './slider/slider.component';
 
 @NgModule({
   declarations: [

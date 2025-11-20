@@ -14,7 +14,7 @@
 
 <!-- Hero Slider Section -->
 <div class="hero-section">
-  <app-slider [images]="[ 'assets/gym1.jpg','assets/gym2.jpg','assets/gym3.jpg','assets/gym4.jpg' ]"></app-slider>
+  <app-slider [images]="sliderImages"></app-slider>
   <div class="hero-overlay">
     <h1 class="hero-title">Transform Your Body</h1>
     <p class="hero-subtitle">Achieve your fitness goals with personalized workout plans</p>
@@ -48,12 +48,12 @@
 <div class="diet-section">
   <h2 class="section-title">Personalized Diet Plans</h2>
   <div class="diet-links">
-    <a routerLink="/diet-fat" class="diet-card">
+    <a routerLink="/mote" class="diet-card">
       <mat-icon>restaurant</mat-icon>
       <h3>Weight Loss Plan</h3>
       <p>Diet for Fat People</p>
     </a>
-    <a routerLink="/diet-thin" class="diet-card">
+    <a routerLink="/patle" class="diet-card">
       <mat-icon>fitness_center</mat-icon>
       <h3>Muscle Gain Plan</h3>
       <p>Diet for Thin People</p>
