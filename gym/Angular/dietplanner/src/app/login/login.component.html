@@ -23,9 +23,13 @@
           <mat-icon matPrefix>lock</mat-icon>
         </mat-form-field>
         <div class="login-actions">
-          <button mat-raised-button class="login-button" (click)="login()">
-            <span>Sign In</span>
-            <mat-icon>arrow_forward</mat-icon>
+          <div *ngIf="errorMessage" class="error-message">
+            {{ errorMessage }}
+          </div>
+          <button mat-raised-button class="login-button" (click)="login()" [disabled]="isLoading">
+            <span *ngIf="!isLoading">Sign In</span>
+            <span *ngIf="isLoading">Connecting...</span>
+            <mat-icon *ngIf="!isLoading">arrow_forward</mat-icon>
           </button>
           <div class="login-footer">
             <p>Don't have an account? <a routerLink="/signup">Sign Up</a></p>

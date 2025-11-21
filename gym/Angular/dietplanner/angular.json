@@ -78,7 +78,8 @@
               "buildTarget": "dietplanner:build:production"
             },
             "development": {
-              "buildTarget": "dietplanner:build:development"
+              "buildTarget": "dietplanner:build:development",
+              "proxyConfig": "proxy.conf.json"
             }
           },
           "defaultConfiguration": "development"
