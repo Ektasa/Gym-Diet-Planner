@@ -8,6 +8,8 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface WeeklyMealPlanRepository extends JpaRepository<WeeklyMealPlan, Integer> {
     WeeklyMealPlan findByDay(String day);
+    WeeklyMealPlan findByMonth(String month);
+
 //    WeeklyMealPlan findByDayAndMonth(String day, String month);
 
 }

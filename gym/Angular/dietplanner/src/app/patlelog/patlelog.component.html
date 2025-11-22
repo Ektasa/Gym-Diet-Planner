@@ -1,6 +1,44 @@
 <h2 class="title">Diet Chart for Thin People</h2>
-<ul class="diet-box">
-<li>Breakfast: Banana Shake + Eggs</li>
-<li>Lunch: Rice + Paneer + Dal</li>
-<li>Dinner: Roti + Ghee + Veg Curry</li>
-</ul>
+
+<div class="container">
+  <div *ngIf="loading" class="loading">
+    <p>Loading meal plans...</p>
+  </div>
+
+  <div *ngIf="error" class="error">
+    <p>{{ error }}</p>
+  </div>
+
+  <div *ngIf="!loading && !error && mealPlans.length > 0" class="table-container">
+    <table class="meal-plan-table">
+      <thead>
+        <tr>
+          <th>Day</th>
+          <th>Breakfast</th>
+          <th>Breakfast Calories</th>
+          <th>Lunch</th>
+          <th>Lunch Calories</th>
+          <th>Dinner</th>
+          <th>Dinner Calories</th>
+          <th>Total Calories</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let plan of mealPlans">
+          <td class="day-cell">{{ plan.day }}</td>
+          <td>{{ plan.breakfast || 'N/A' }}</td>
+          <td class="calorie-cell">{{ plan.breakfastCal || 0 }}</td>
+          <td>{{ plan.lunch || 'N/A' }}</td>
+          <td class="calorie-cell">{{ plan.lunchCal || 0 }}</td>
+          <td>{{ plan.dinner || 'N/A' }}</td>
+          <td class="calorie-cell">{{ plan.dinnerCal || 0 }}</td>
+          <td class="total-calorie-cell">{{ plan.totalCal || 0 }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div *ngIf="!loading && !error && mealPlans.length === 0" class="no-data">
+    <p>No meal plans found.</p>
+  </div>
+</div>

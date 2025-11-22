@@ -48,6 +48,76 @@ public class WeeklyMealPlan {
         this.totalCal = totalCal;
     }
 
+    // Getters and Setters
+    public Integer getId() {
+        return id;
+    }
 
-// Getters and setters (omitted for brevity) — generate via IDE
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getDay() {
+        return day;
+    }
+
+    public void setDay(String day) {
+        this.day = day;
+    }
+
+    public String getBreakfast() {
+        return breakfast;
+    }
+
+    public void setBreakfast(String breakfast) {
+        this.breakfast = breakfast;
+    }
+
+    public Integer getBreakfastCal() {
+        return breakfastCal;
+    }
+
+    public void setBreakfastCal(Integer breakfastCal) {
+        this.breakfastCal = breakfastCal;
+    }
+
+    public String getLunch() {
+        return lunch;
+    }
+
+    public void setLunch(String lunch) {
+        this.lunch = lunch;
+    }
+
+    public Integer getLunchCal() {
+        return lunchCal;
+    }
+
+    public void setLunchCal(Integer lunchCal) {
+        this.lunchCal = lunchCal;
+    }
+
+    public String getDinner() {
+        return dinner;
+    }
+
+    public void setDinner(String dinner) {
+        this.dinner = dinner;
+    }
+
+    public Integer getDinnerCal() {
+        return dinnerCal;
+    }
+
+    public void setDinnerCal(Integer dinnerCal) {
+        this.dinnerCal = dinnerCal;
+    }
+
+    public Integer getTotalCal() {
+        return totalCal;
+    }
+
+    public void setTotalCal(Integer totalCal) {
+        this.totalCal = totalCal;
+    }
 }

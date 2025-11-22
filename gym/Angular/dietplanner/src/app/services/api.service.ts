@@ -41,5 +41,11 @@ export class ApiService {
     const url = `${this.apiUrl}/login/delete/${id}`;
     return this.http.delete(url, { headers: this.getHeaders() });
   }
+
+  // Get all weekly meal plans
+  getAllWeeklyMealPlans(): Observable<any> {
+    const url = `${this.apiUrl}/patle`;
+    return this.http.get(url, { headers: this.getHeaders() });
+  }
 }
 

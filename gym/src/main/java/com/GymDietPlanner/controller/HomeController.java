@@ -39,12 +39,12 @@ public class HomeController {
 		return "mote";
 	}
 
-	@GetMapping("/patle")
-	public String patle(Model model) {
-		model.addAttribute("title", "7 Days Diet Plan - Patle Log");
-		model.addAttribute("plan", getPatlePlan());
-		return "patle";
-	}
+//	@GetMapping("/patle")
+//	public String patle(Model model) {
+//		model.addAttribute("title", "7 Days Diet Plan - Patle Log");
+//		model.addAttribute("plan", getPatlePlan());
+//		return "patle";
+//	}
 
 	private Map<String, String> getMotePlan() {
 		Map<String, String> plan = new LinkedHashMap<>();

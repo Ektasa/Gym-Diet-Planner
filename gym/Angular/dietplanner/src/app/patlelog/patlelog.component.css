@@ -1,6 +1,127 @@
-.title { text-align: center; font-size: 28px; }
-.diet-box {
-width: 60%; margin: 30px auto;
-background: #fff; padding: 20px; border-radius: 10px;
-box-shadow: 0 0 10px rgba(0,0,0,0.1);
+.title { 
+  text-align: center; 
+  font-size: 28px; 
+  margin-bottom: 30px;
+  color: #333;
+  font-weight: 600;
+}
+
+.container {
+  width: 95%;
+  max-width: 1400px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+.table-container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  overflow-x: auto;
+}
+
+.meal-plan-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0;
+  font-size: 14px;
+  min-width: 1000px;
+}
+
+.meal-plan-table thead {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.meal-plan-table th {
+  padding: 15px 12px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border: none;
+}
+
+.meal-plan-table tbody tr {
+  border-bottom: 1px solid #e0e0e0;
+  transition: background-color 0.2s ease;
+}
+
+.meal-plan-table tbody tr:hover {
+  background-color: #f5f5f5;
+}
+
+.meal-plan-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.meal-plan-table td {
+  padding: 15px 12px;
+  color: #333;
+  vertical-align: top;
+}
+
+.day-cell {
+  font-weight: 600;
+  color: #667eea;
+  text-transform: capitalize;
+}
+
+.calorie-cell {
+  text-align: center;
+  color: #666;
+  font-weight: 500;
+}
+
+.total-calorie-cell {
+  text-align: center;
+  font-weight: 700;
+  color: #764ba2;
+  font-size: 15px;
+}
+
+.loading, .error, .no-data {
+  text-align: center;
+  padding: 40px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.loading p {
+  color: #667eea;
+  font-size: 16px;
+}
+
+.error p {
+  color: #e74c3c;
+  font-size: 16px;
+}
+
+.no-data p {
+  color: #999;
+  font-size: 16px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .meal-plan-table {
+    font-size: 12px;
+  }
+
+  .meal-plan-table th,
+  .meal-plan-table td {
+    padding: 10px 8px;
+  }
+
+  .title {
+    font-size: 22px;
+  }
 }

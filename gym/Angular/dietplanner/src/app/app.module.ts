@@ -50,6 +50,7 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
   ],
   providers: [
     provideAnimationsAsync()
-  ]
+  ],
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
