@@ -1,42 +1,44 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { ApiService } from '../services/api.service';
 
 @Component({
   selector: 'app-motelog',
   templateUrl: './motelog.component.html',
   styleUrl: './motelog.component.css'
 })
-export class MotelogComponent implements OnInit{
+export class MotelogComponent implements OnInit {
+  mealPlans: any[] = [];
+  loading: boolean = false;
+  error: string = '';
 
-ngOnInit(): void {
-    this.Onshow();
-}
- constructor(private httpClient:HttpClient) { }
+  constructor(private apiService: ApiService) { }
 
-user : any[]=[];
+  ngOnInit(): void {
+    this.loadMealPlans();
+  }
 
-  Onshow(){
-       const url="http://localhost:8080/login/getuser"
-        // console.log(this.Login.value);
-        this.httpClient.get(url).subscribe((response:any)=>{
-            console.log(response);
-            this.user=response;
-        } ,error=>{
-            console.log("error on this login "+error);
-        }   
-        );
-
-
-    } 
-
-    DeleteUser(id:any){
-         const url="http://localhost:8080/login/delete";    
-         this.httpClient.get(url+"/"+id).subscribe((response:any)=>{
-            console.log(response);
-            this.Onshow();
-        } ,error=>{
-            console.log("error on this delete "+error);
+  loadMealPlans(): void {
+    this.loading = true;
+    this.error = '';
+    
+    this.apiService.getAllWeeklyMealPlansForMote().subscribe({
+      next: (data) => {
+        // Handle both array and wrapped responses
+        if (data && Array.isArray(data)) {
+          this.mealPlans = data;
+        } else if (data && data.body && Array.isArray(data.body)) {
+          this.mealPlans = data.body;
+        } else {
+          this.mealPlans = [];
         }
-        );
-    }    
+        this.loading = false;
+      },
+      error: (err) => {
+        console.error('Error fetching meal plans:', err);
+        this.error = err?.error?.message || 'Failed to load meal plans. Please try again later.';
+        this.loading = false;
+        this.mealPlans = [];
+      }
+    });
+  }
 } 

@@ -11,6 +11,7 @@ import java.util.List;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import org.springframework.http.ResponseEntity;
+import java.util.ArrayList;
 
 @RestController
 @CrossOrigin(origins = "http://localhost:4200")
@@ -45,6 +46,21 @@ public class WeeklyMealplanController {
             return ResponseEntity.ok(mealPlans);
         } catch (Exception e) {
             return ResponseEntity.status(500).body(null);
+        }
+    }
+
+    // Endpoint to get all weekly meal plans for motelog
+    @GetMapping("/mote")
+    public ResponseEntity<List<WeeklyMealPlan>> getAllWeeklyMealPlansForMote() {
+        try {
+            List<WeeklyMealPlan> mealPlans = weeklyMealPlanRepository.findAll();
+            if (mealPlans == null || mealPlans.isEmpty()) {
+                return ResponseEntity.ok(new ArrayList<>());
+            }
+            return ResponseEntity.ok(mealPlans);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return ResponseEntity.ok(new ArrayList<>()); // Return empty list instead of null
         }
     }
 }

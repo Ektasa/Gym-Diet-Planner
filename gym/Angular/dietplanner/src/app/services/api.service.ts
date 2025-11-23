@@ -47,5 +47,11 @@ export class ApiService {
     const url = `${this.apiUrl}/patle`;
     return this.http.get(url, { headers: this.getHeaders() });
   }
+
+  // Get all weekly meal plans for motelog
+  getAllWeeklyMealPlansForMote(): Observable<any> {
+    const url = `${this.apiUrl}/mote`;
+    return this.http.get(url, { headers: this.getHeaders() });
+  }
 }
 
