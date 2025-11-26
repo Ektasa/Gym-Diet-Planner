@@ -25,7 +25,7 @@ public class WeeklyMealplanController {
         return "This is your weekly meal plan.";
     }
     
-    @GetMapping("/getmal4patle")
+    @GetMapping("/getmote4patle")
     private Map<String, String> getPatlePlan() {
         Map<String, String> plan = new LinkedHashMap<>();
         plan.put("Monday", "Full-fat milk, peanut butter sandwich, bananas");
@@ -43,9 +43,13 @@ public class WeeklyMealplanController {
     public ResponseEntity<List<WeeklyMealPlan>> getAllWeeklyMealPlans() {
         try {
             List<WeeklyMealPlan> mealPlans = weeklyMealPlanRepository.findAll();
+            if (mealPlans == null || mealPlans.isEmpty()) {
+                return ResponseEntity.ok(new ArrayList<>());
+            }
             return ResponseEntity.ok(mealPlans);
         } catch (Exception e) {
-            return ResponseEntity.status(500).body(null);
+            e.printStackTrace();
+            return ResponseEntity.ok(new ArrayList<>()); // Return empty list instead of null
         }
     }
 

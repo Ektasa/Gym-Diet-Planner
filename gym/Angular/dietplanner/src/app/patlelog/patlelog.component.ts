@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ApiService } from '../services/api.service'; 
+import { ApiService } from '../services/api.service';
 
 @Component({
   selector: 'app-patlelog',
@@ -21,16 +21,24 @@ export class PatlelogComponent implements OnInit {
     this.loading = true;
     this.error = '';
     
-    this.apiService.getAllWeeklyMealPlans().subscribe({
+    this.apiService.getAllWeeklyMealPlansForMote().subscribe({
       next: (data) => {
-        this.mealPlans = data;
+        // Handle both array and wrapped responses
+        if (data && Array.isArray(data)) {
+          this.mealPlans = data;
+        } else if (data && data.body && Array.isArray(data.body)) {
+          this.mealPlans = data.body;
+        } else {
+          this.mealPlans = [];
+        }
         this.loading = false;
       },
       error: (err) => {
         console.error('Error fetching meal plans:', err);
-        this.error = 'Failed to load meal plans. Please try again later.';
+        this.error = err?.error?.message || 'Failed to load meal plans. Please try again later.';
         this.loading = false;
+        this.mealPlans = [];
       }
     });
   }
-}
+} 
