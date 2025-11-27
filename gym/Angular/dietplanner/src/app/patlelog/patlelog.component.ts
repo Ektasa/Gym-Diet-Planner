@@ -21,7 +21,7 @@ export class PatlelogComponent implements OnInit {
     this.loading = true;
     this.error = '';
     
-    this.apiService.getAllWeeklyMealPlansForMote().subscribe({
+    this.apiService.getAllWeeklyMealPlans().subscribe({
       next: (data) => {
         // Handle both array and wrapped responses
         if (data && Array.isArray(data)) {
