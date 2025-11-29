@@ -43,7 +43,7 @@ public class WeeklyMealplanController {
     }
 
     // New endpoint to get all weekly meal plans
-    @GetMapping("/patle")
+    @GetMapping("/mote")
     public ResponseEntity<List<WeeklyMealPlan>> getAllWeeklyMealPlans() {
         try {
             List<WeeklyMealPlan> mealPlans = weeklyMealPlanRepository.findAll();
@@ -57,14 +57,14 @@ public class WeeklyMealplanController {
         }
     }
 
-    @GetMapping("/mealplans")
+    @GetMapping("/patle")
     public List<Map<String, Object>> getMealPlans() {
         String sql = "SELECT * FROM thin_meal_plan";
         return jdbcTemplate.queryForList(sql);
     }
 
     // Endpoint to get all weekly meal plans for motelog
-    @GetMapping("/mote")
+    @GetMapping("/moteold")
     public ResponseEntity<List<WeeklyMealPlan>> getAllWeeklyMealPlansForMote() {
         try {
             List<WeeklyMealPlan> mealPlans = weeklyMealPlanRepository.findAll();
