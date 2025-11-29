@@ -3,6 +3,7 @@ package com.GymDietPlanner.controller;
 import com.GymDietPlanner.Entity.WeeklyMealPlan;
 import com.GymDietPlanner.Repository.WeeklyMealPlanRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -19,6 +20,9 @@ public class WeeklyMealplanController {
 
     @Autowired
     private WeeklyMealPlanRepository weeklyMealPlanRepository;
+
+    @Autowired
+    private JdbcTemplate jdbcTemplate;
 
     @GetMapping("/get")
     public String getMealPlan() {
@@ -51,6 +55,12 @@ public class WeeklyMealplanController {
             e.printStackTrace();
             return ResponseEntity.ok(new ArrayList<>()); // Return empty list instead of null
         }
+    }
+
+    @GetMapping("/mealplans")
+    public List<Map<String, Object>> getMealPlans() {
+        String sql = "SELECT * FROM thin_meal_plan";
+        return jdbcTemplate.queryForList(sql);
     }
 
     // Endpoint to get all weekly meal plans for motelog

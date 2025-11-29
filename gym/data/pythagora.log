@@ -459,3 +459,180 @@ Extra context: {
 2025-11-26T18:13:31.399Z INFO [MainProvider] First file opened, creating split view
 2025-11-26T18:13:31.399Z INFO splitCodeView: Creating split layout with code on left, Pythagora on right
 2025-11-26T18:13:31.458Z INFO splitCodeView: Split layout created successfully
+2025-11-27T18:26:19.881Z INFO [MainProvider] First file opened, creating split view
+2025-11-27T18:26:19.884Z INFO splitCodeView: Creating split layout with code on left, Pythagora on right
+2025-11-27T18:26:20.018Z INFO [MainProvider] First file opened, creating split view
+2025-11-27T18:26:20.018Z INFO splitCodeView: Creating split layout with code on left, Pythagora on right
+2025-11-27T18:26:20.038Z INFO Successfully restored from code view
+2025-11-27T18:26:20.130Z INFO splitCodeView: Split layout created successfully
+2025-11-27T18:26:20.187Z INFO splitCodeView: Split layout created successfully
+2025-11-27T18:26:27.498Z INFO Successfully restored from code view
+2025-11-27T18:26:28.313Z INFO [MainProvider] First file opened, creating split view
+2025-11-27T18:26:28.314Z INFO splitCodeView: Creating split layout with code on left, Pythagora on right
+2025-11-27T18:26:28.552Z INFO splitCodeView: Split layout created successfully
+2025-11-27T18:26:40.639Z INFO [MainProvider] First file opened, creating split view
+2025-11-27T18:26:40.639Z INFO splitCodeView: Creating split layout with code on left, Pythagora on right
+2025-11-27T18:26:40.936Z INFO splitCodeView: Split layout created successfully
+2025-11-27T18:26:43.592Z INFO [MainProvider] First file opened, creating split view
+2025-11-27T18:26:43.592Z INFO splitCodeView: Creating split layout with code on left, Pythagora on right
+2025-11-27T18:26:43.717Z INFO splitCodeView: Split layout created successfully
+2025-11-27T18:26:44.141Z INFO Successfully restored from code view
+2025-11-27T18:26:46.732Z INFO [MainProvider] First file opened, creating split view
+2025-11-27T18:26:46.733Z INFO splitCodeView: Creating split layout with code on left, Pythagora on right
+2025-11-27T18:26:46.956Z INFO splitCodeView: Split layout created successfully
+2025-11-27T18:27:12.151Z INFO [MainProvider] First file opened, creating split view
+2025-11-27T18:27:12.152Z INFO splitCodeView: Creating split layout with code on left, Pythagora on right
+2025-11-27T18:27:12.366Z INFO splitCodeView: Split layout created successfully
+2025-11-27T18:27:45.616Z INFO [MainProvider] First file opened, creating split view
+2025-11-27T18:27:45.617Z INFO splitCodeView: Creating split layout with code on left, Pythagora on right
+2025-11-27T18:27:45.684Z INFO splitCodeView: Split layout created successfully
+2025-11-27T18:27:55.879Z INFO [MainProvider] First file opened, creating split view
+2025-11-27T18:27:55.879Z INFO splitCodeView: Creating split layout with code on left, Pythagora on right
+2025-11-27T18:27:55.943Z INFO splitCodeView: Split layout created successfully
+2025-11-27T18:27:56.090Z INFO [MainProvider] First file opened, creating split view
+2025-11-27T18:27:56.090Z INFO splitCodeView: Creating split layout with code on left, Pythagora on right
+2025-11-27T18:27:56.231Z INFO Successfully restored from code view
+2025-11-27T18:27:56.311Z INFO splitCodeView: Split layout created successfully
+2025-11-27T18:28:01.764Z INFO [MainProvider] First file opened, creating split view
+2025-11-27T18:28:01.765Z INFO splitCodeView: Creating split layout with code on left, Pythagora on right
+2025-11-27T18:28:01.990Z INFO splitCodeView: Split layout created successfully
+2025-11-27T18:29:01.648Z INFO [MainProvider] First file opened, creating split view
+2025-11-27T18:29:01.650Z INFO splitCodeView: Creating split layout with code on left, Pythagora on right
+2025-11-27T18:29:01.863Z INFO splitCodeView: Split layout created successfully
+2025-11-27T18:41:00.948Z INFO Successfully restored from code view
+2025-11-27T18:41:03.780Z INFO [MainProvider] First file opened, creating split view
+2025-11-27T18:41:03.781Z INFO splitCodeView: Creating split layout with code on left, Pythagora on right
+2025-11-27T18:41:04.061Z INFO splitCodeView: Split layout created successfully
+2025-11-27T18:41:15.895Z INFO [MainProvider] First file opened, creating split view
+2025-11-27T18:41:15.896Z INFO splitCodeView: Creating split layout with code on left, Pythagora on right
+2025-11-27T18:41:16.146Z INFO splitCodeView: Split layout created successfully
+2025-11-27T18:41:23.349Z INFO [MainProvider] First file opened, creating split view
+2025-11-27T18:41:23.349Z INFO splitCodeView: Creating split layout with code on left, Pythagora on right
+2025-11-27T18:41:23.417Z INFO splitCodeView: Split layout created successfully
+2025-11-27T18:41:23.589Z INFO [MainProvider] First file opened, creating split view
+2025-11-27T18:41:23.590Z INFO splitCodeView: Creating split layout with code on left, Pythagora on right
+2025-11-27T18:41:23.632Z INFO Successfully restored from code view
+2025-11-27T18:41:23.862Z INFO splitCodeView: Split layout created successfully
+2025-11-27T18:41:29.548Z INFO [MainProvider] First file opened, creating split view
+2025-11-27T18:41:29.549Z INFO splitCodeView: Creating split layout with code on left, Pythagora on right
+2025-11-27T18:41:29.802Z INFO splitCodeView: Split layout created successfully
+2025-11-27T18:41:50.086Z INFO [MainProvider] First file opened, creating split view
+2025-11-27T18:41:50.087Z INFO splitCodeView: Creating split layout with code on left, Pythagora on right
+2025-11-27T18:41:50.152Z INFO splitCodeView: Split layout created successfully
+2025-11-27T18:41:53.425Z INFO [MainProvider] First file opened, creating split view
+2025-11-27T18:41:53.426Z INFO splitCodeView: Creating split layout with code on left, Pythagora on right
+2025-11-27T18:41:53.491Z INFO splitCodeView: Split layout created successfully
+2025-11-27T18:42:05.350Z INFO [MainProvider] First file opened, creating split view
+2025-11-27T18:42:05.350Z INFO splitCodeView: Creating split layout with code on left, Pythagora on right
+2025-11-27T18:42:05.412Z INFO splitCodeView: Split layout created successfully
+2025-11-27T18:42:18.466Z INFO [MainProvider] First file opened, creating split view
+2025-11-27T18:42:18.467Z INFO splitCodeView: Creating split layout with code on left, Pythagora on right
+2025-11-27T18:42:18.534Z INFO splitCodeView: Split layout created successfully
+2025-11-27T18:42:27.189Z INFO [MainProvider] First file opened, creating split view
+2025-11-27T18:42:27.190Z INFO splitCodeView: Creating split layout with code on left, Pythagora on right
+2025-11-27T18:42:27.259Z INFO splitCodeView: Split layout created successfully
+2025-11-27T18:42:30.301Z INFO [MainProvider] First file opened, creating split view
+2025-11-27T18:42:30.302Z INFO splitCodeView: Creating split layout with code on left, Pythagora on right
+2025-11-27T18:42:30.369Z INFO splitCodeView: Split layout created successfully
+2025-11-27T18:42:32.673Z INFO [MainProvider] First file opened, creating split view
+2025-11-27T18:42:32.674Z INFO splitCodeView: Creating split layout with code on left, Pythagora on right
+2025-11-27T18:42:32.746Z INFO splitCodeView: Split layout created successfully
+2025-11-27T18:42:36.118Z INFO [MainProvider] First file opened, creating split view
+2025-11-27T18:42:36.119Z INFO splitCodeView: Creating split layout with code on left, Pythagora on right
+2025-11-27T18:42:36.183Z INFO splitCodeView: Split layout created successfully
+2025-11-27T18:42:50.948Z INFO [MainProvider] First file opened, creating split view
+2025-11-27T18:42:50.948Z INFO splitCodeView: Creating split layout with code on left, Pythagora on right
+2025-11-27T18:42:51.020Z INFO splitCodeView: Split layout created successfully
+2025-11-27T18:43:18.261Z INFO [MainProvider] First file opened, creating split view
+2025-11-27T18:43:18.262Z INFO splitCodeView: Creating split layout with code on left, Pythagora on right
+2025-11-27T18:43:18.301Z INFO Successfully restored from code view
+2025-11-27T18:43:18.526Z INFO splitCodeView: Split layout created successfully
+2025-11-27T18:43:54.314Z INFO [MainProvider] First file opened, creating split view
+2025-11-27T18:43:54.315Z INFO splitCodeView: Creating split layout with code on left, Pythagora on right
+2025-11-27T18:43:54.611Z INFO splitCodeView: Split layout created successfully
+2025-11-27T18:44:05.441Z INFO [MainProvider] First file opened, creating split view
+2025-11-27T18:44:05.441Z INFO splitCodeView: Creating split layout with code on left, Pythagora on right
+2025-11-27T18:44:05.513Z INFO splitCodeView: Split layout created successfully
+2025-11-27T18:44:05.738Z INFO Successfully restored from code view
+2025-11-27T18:44:07.335Z INFO [MainProvider] First file opened, creating split view
+2025-11-27T18:44:07.336Z INFO splitCodeView: Creating split layout with code on left, Pythagora on right
+2025-11-27T18:44:07.576Z INFO splitCodeView: Split layout created successfully
+2025-11-27T18:44:39.003Z INFO [MainProvider] First file opened, creating split view
+2025-11-27T18:44:39.003Z INFO splitCodeView: Creating split layout with code on left, Pythagora on right
+2025-11-27T18:44:39.220Z INFO splitCodeView: Split layout created successfully
+2025-11-27T18:44:56.351Z INFO [MainProvider] First file opened, creating split view
+2025-11-27T18:44:56.352Z INFO splitCodeView: Creating split layout with code on left, Pythagora on right
+2025-11-27T18:44:56.419Z INFO splitCodeView: Split layout created successfully
+2025-11-27T18:44:56.569Z INFO [MainProvider] First file opened, creating split view
+2025-11-27T18:44:56.570Z INFO splitCodeView: Creating split layout with code on left, Pythagora on right
+2025-11-27T18:44:56.642Z INFO Successfully restored from code view
+2025-11-27T18:44:56.808Z INFO splitCodeView: Split layout created successfully
+2025-11-27T18:45:08.317Z INFO [MainProvider] First file opened, creating split view
+2025-11-27T18:45:08.317Z INFO splitCodeView: Creating split layout with code on left, Pythagora on right
+2025-11-27T18:45:08.535Z INFO splitCodeView: Split layout created successfully
+2025-11-27T18:49:11.076Z INFO [MainProvider] First file opened, creating split view
+2025-11-27T18:49:11.077Z INFO splitCodeView: Creating split layout with code on left, Pythagora on right
+2025-11-27T18:49:11.146Z INFO splitCodeView: Split layout created successfully
+2025-11-27T18:49:11.696Z INFO Successfully restored from code view
+2025-11-27T18:49:14.037Z INFO [MainProvider] First file opened, creating split view
+2025-11-27T18:49:14.037Z INFO splitCodeView: Creating split layout with code on left, Pythagora on right
+2025-11-27T18:49:14.274Z INFO splitCodeView: Split layout created successfully
+2025-11-27T19:02:22.966Z INFO [MainProvider] First file opened, creating split view
+2025-11-27T19:02:22.968Z INFO splitCodeView: Creating split layout with code on left, Pythagora on right
+2025-11-27T19:02:23.204Z INFO splitCodeView: Split layout created successfully
+2025-11-27T19:03:25.634Z INFO [MainProvider] First file opened, creating split view
+2025-11-27T19:03:25.635Z INFO splitCodeView: Creating split layout with code on left, Pythagora on right
+2025-11-27T19:03:25.697Z INFO splitCodeView: Split layout created successfully
+2025-11-27T19:03:25.910Z INFO Successfully restored from code view
+2025-11-27T19:03:27.843Z INFO [MainProvider] First file opened, creating split view
+2025-11-27T19:03:27.844Z INFO splitCodeView: Creating split layout with code on left, Pythagora on right
+2025-11-27T19:03:28.127Z INFO splitCodeView: Split layout created successfully
+2025-11-27T19:03:36.267Z INFO [MainProvider] First file opened, creating split view
+2025-11-27T19:03:36.268Z INFO splitCodeView: Creating split layout with code on left, Pythagora on right
+2025-11-27T19:03:36.502Z INFO splitCodeView: Split layout created successfully
+2025-11-29T09:11:31.758Z INFO SharedStateManager initialized
+2025-11-29T09:11:31.759Z INFO Is remote: false
+2025-11-29T09:11:31.760Z INFO Starting Local. Installation path: e:\git\New code extraction project for page
+2025-11-29T09:11:31.762Z INFO [MainProvider] Creating new MainProvider instance...
+2025-11-29T09:11:31.766Z INFO Installation path exists: e:\git\New code extraction project for page
+2025-11-29T09:11:31.767Z INFO Initializing database with URL: file:e:\git\New code extraction project for page\pythagora-core\data\database\pythagora.db
+2025-11-29T09:11:31.775Z INFO Database file exists, skipping prisma generate/push for faster startup
+2025-11-29T09:11:31.776Z INFO Database initialized successfully
+2025-11-29T09:11:31.777Z INFO [Migration] Checking for database migration...
+2025-11-29T09:11:32.110Z INFO [Migration] No migration needed
+2025-11-29T09:12:41.290Z INFO Closing entire Pythagora extension...
+2025-11-29T09:12:41.529Z ERROR Error closing extension
+Error: Canceled
+Stack: Canceled: Canceled
+    at new MR (file:///c:/Users/Ekta/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:116391)
+    at U4.U (file:///c:/Users/Ekta/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:121001)
+    at Proxy.s.<computed>.n.charCodeAt.s.<computed> (file:///c:/Users/Ekta/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:118495)
+    at iy.g (file:///c:/Users/Ekta/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:114:41101)
+    at iy.executeCommand (file:///c:/Users/Ekta/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:114:40605)
+    at Object.executeCommand (file:///c:/Users/Ekta/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:201:105071)
+    at closeEntirePythagoraExtension (c:\Users\Ekta\.vscode\extensions\pythagoratechnologies.pythagora-vs-code-2.5.34\out\extension.js:536:31)
+    at Object.deactivate (c:\Users\Ekta\.vscode\extensions\pythagoratechnologies.pythagora-vs-code-2.5.34\out\extension.js:427:15)
+    at SZ.eb (file:///c:/Users/Ekta/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:118:11797)
+    at file:///c:/Users/Ekta/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:118:9947
+    at Array.map (<anonymous>)
+    at SZ.$ (file:///c:/Users/Ekta/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:118:9935)
+    at SZ.terminate (file:///c:/Users/Ekta/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:118:10178)
+    at H3.terminate (file:///c:/Users/Ekta/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:120:914)
+    at Ss (file:///c:/Users/Ekta/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:393:10409)
+    at MessagePortMain.<anonymous> (file:///c:/Users/Ekta/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:393:6948)
+    at MessagePortMain.emit (node:events:519:28)
+    at Object.MessagePortMain._internalPort.emit (node:electron/js2c/utility_init:2:2949)
+    at Object.callbackTrampoline (node:internal/async_hooks:130:17)
+Extra context: {
+  "message": "Canceled"
+}
+2025-11-29T09:27:49.944Z INFO [MainProvider] First file opened, creating split view
+2025-11-29T09:27:49.948Z INFO splitCodeView: Creating split layout with code on left, Pythagora on right
+2025-11-29T09:27:50.095Z INFO splitCodeView: Split layout created successfully
+2025-11-29T09:28:17.674Z INFO Successfully restored from code view
+2025-11-29T09:28:20.133Z INFO [MainProvider] First file opened, creating split view
+2025-11-29T09:28:20.134Z INFO splitCodeView: Creating split layout with code on left, Pythagora on right
+2025-11-29T09:28:20.393Z INFO splitCodeView: Split layout created successfully
+2025-11-29T10:17:29.405Z INFO [MainProvider] First file opened, creating split view
+2025-11-29T10:17:29.405Z INFO splitCodeView: Creating split layout with code on left, Pythagora on right
+2025-11-29T10:17:30.014Z INFO splitCodeView: Split layout created successfully
