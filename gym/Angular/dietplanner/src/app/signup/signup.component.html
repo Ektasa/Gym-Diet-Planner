@@ -4,7 +4,7 @@
     <div class="bg-shape shape-2"></div>
     <div class="bg-shape shape-3"></div>
   </div>
-  <div class="signup-content">
+  <!-- <div class="signup-content">
     <mat-card class="signup-card">
       <div class="signup-header">
         <mat-icon class="signup-icon">person_add</mat-icon>
@@ -38,5 +38,29 @@
         </div>
       </form>
     </mat-card>
+  </div> -->
+
+
+  <div class="signup-container">
+     <mat-card class="signup-card">
+ <div class="signup-header">
+       <mat-icon class="signup-icon">person_add</mat-icon>
+  <h2>Create your account</h2>
   </div>
+  <form (ngSubmit)="signup()"  class="signup-form">
+    <input formControlName="email" placeholder="Email" type="email" />
+    <input formControlName="password" placeholder="Password" type="password" />
+    <button type="submit">Sign Up</button>
+  </form>
+  <div class="divider">OR</div>
+  <button class="google-btn" (click)="continueWithGoogle()">
+    <img src="assets/google.png" alt="Google" /> Continue with Google
+  </button>
+  <button class="outlook-btn" (click)="continueWithOutlook()">
+    <img src="assets/outlook.png" alt="Outlook" /> Continue with Outlook
+  </button>
+
+  </mat-card>
+</div>
+
 </div>
