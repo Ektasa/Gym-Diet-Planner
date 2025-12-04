@@ -24,7 +24,7 @@ export class SignupComponent {
   signup() {
     const data = this.signupForm.value;
     // call backend API
-    fetch('http://localhost:8080/api/auth/signup', {
+    fetch('http://localhost:8080/login/', {
       method: 'POST',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify(data)

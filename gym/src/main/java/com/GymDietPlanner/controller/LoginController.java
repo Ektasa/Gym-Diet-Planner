@@ -1,6 +1,7 @@
 package com.GymDietPlanner.controller;
 
 import com.GymDietPlanner.Entity.Login;
+import com.GymDietPlanner.Service.LoginServiceImpl;
 import com.GymDietPlanner.Service.loginDetailsService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -31,6 +32,11 @@ public class LoginController {
         } catch (Exception e) {
             return ResponseEntity.status(500).body(Map.of("status", "error", "message", e.getMessage()));
         }
+    }
+    @PostMapping("/signup")
+    public String signup(@RequestBody LoginServiceImpl.SignupRequest req) {
+        // TODO: persist user, hash password, validate, etc.
+        return "User registered with email: " + req.getEmail();
     }
 
     @GetMapping("/getuser")
