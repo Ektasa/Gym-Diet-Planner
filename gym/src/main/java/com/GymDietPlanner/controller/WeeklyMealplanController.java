@@ -38,6 +38,7 @@ public class WeeklyMealplanController {
         plan.put("Thursday", "Rice, lentils, paneer or tofu");
         plan.put("Friday", "Granola with yogurt, dried fruits");
         plan.put("Saturday", "Peanut butter smoothie, nuts");
+        plan.put("Saturday", "Peanut butter smoothie, nuts");
         plan.put("Sunday", "Whole milk, potatoes, protein-rich meal");
         return plan;
     }
