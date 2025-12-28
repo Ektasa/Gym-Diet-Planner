@@ -1,0 +1,17 @@
+2025-12-05T18:50:53.497Z INFO SharedStateManager initialized
+2025-12-05T18:50:53.500Z INFO Is remote: false
+2025-12-05T18:50:53.501Z INFO Starting Local. Installation path: e:\git\New code extraction project for page
+2025-12-05T18:50:53.502Z INFO [MainProvider] Creating new MainProvider instance...
+2025-12-05T18:50:53.505Z INFO [TabsManager] Code view listener set up at initialization
+2025-12-05T18:50:53.506Z INFO Installation path exists: e:\git\New code extraction project for page
+2025-12-05T18:50:53.507Z INFO Initializing database with URL: file:e:\git\New code extraction project for page\pythagora-core\data\database\pythagora.db
+2025-12-05T18:50:53.531Z INFO Database file exists, skipping prisma generate/push for faster startup
+2025-12-05T18:50:53.535Z INFO Database initialized successfully
+2025-12-05T18:50:53.537Z INFO [Migration] Checking for database migration...
+2025-12-05T18:50:53.715Z INFO [Migration] No migration needed
+2025-12-05T18:51:16.915Z INFO [TabsManager] First file opened, triggering split view
+2025-12-05T18:51:16.916Z INFO [MainProvider] First file opened, creating split view
+2025-12-05T18:53:25.083Z INFO [TabsManager] First file opened, triggering split view
+2025-12-05T18:53:25.084Z INFO [MainProvider] First file opened, creating split view
+2025-12-05T18:53:27.732Z INFO [TabsManager] First file opened, triggering split view
+2025-12-05T18:53:27.733Z INFO [MainProvider] First file opened, creating split view
