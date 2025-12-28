@@ -1,6 +1,7 @@
 package com.GymDietPlanner.Service;
 
 
+import com.GymDietPlanner.Entity.Role;
 import com.GymDietPlanner.Entity.User;
 import com.GymDietPlanner.Repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,7 +10,7 @@ import org.springframework.stereotype.Service;
 
 import jakarta.annotation.PostConstruct;
 
-import jakarta.management.relation.Role;
+//import jakarta.management.relation.Role;
 import java.util.*;
 
 @Service
