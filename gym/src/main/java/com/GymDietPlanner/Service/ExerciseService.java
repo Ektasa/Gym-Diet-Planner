@@ -1,5 +1,8 @@
 package com.GymDietPlanner.Service;
 
+import com.GymDietPlanner.Entity.Exercise;
+import com.GymDietPlanner.Entity.ExerciseCategory;
+import com.GymDietPlanner.Repository.ExerciseRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
